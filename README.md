@@ -102,14 +102,15 @@ npm start
 
 Contributions are welcome! Please fork this repository, create a new branch, and submit a pull request.
 
-Contributors
+## Contributors
+
 <table>
   <tr>
     <td align="center">
       <a href="https://github.com/Harsh5442">
         <img src="https://avatars.githubusercontent.com/u/76982505?v=4" width="100px;" alt="Harsh" />
         <br />
-        <sub><b style="font-size: 24px;">Harsh</b></sub>
+        <H1><b style="font-size: 24px;">Harsh</b></H1>
       </a>
       <br />
       <a href="https://github.com/Harsh5442" title="Code">
