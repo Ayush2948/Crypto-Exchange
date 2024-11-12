@@ -102,6 +102,42 @@ npm start
 
 Contributions are welcome! Please fork this repository, create a new branch, and submit a pull request.
 
+Contributors
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Harsh5442">
+        <img src="https://avatars.githubusercontent.com/u/76982505?v=4" width="100px;" alt="Harsh"/>
+        <br />
+        <sub><b>Harsh</b></sub>
+      </a>
+      <br />
+      <a href="https://github.com/Harsh5442" title="Code">💻</a>
+      <a href="https://www.linkedin.com/in/harsh5442/" title="LinkedIn">🔗</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/pranav030203">
+        <img src="https://avatars.githubusercontent.com/u/80613469?v=4" width="100px;" alt="Pranav"/>
+        <br />
+        <sub><b>Pranav</b></sub>
+      </a>
+      <br />
+      <a href="https://github.com/pranav030203" title="Code">💻</a>
+      <a href="https://www.linkedin.com/in/pranav-phadatare-07aa53239/" title="LinkedIn">🔗</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Ayush2948">
+        <img src="https://avatars.githubusercontent.com/u/78246711?v=4" width="100px;" alt="Ayush"/>
+        <br />
+        <sub><b>Ayush</b></sub>
+      </a>
+      <br />
+      <a href="https://github.com/Ayush2948" title="Code">💻</a>
+      <a href="https://www.linkedin.com/in/ayushp2948/" title="LinkedIn">🔗</a>
+    </td>
+  </tr>
+</table>
+
 ## License
 
 This project is licensed under the MIT License.
