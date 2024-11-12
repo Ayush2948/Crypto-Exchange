@@ -110,7 +110,7 @@ Contributions are welcome! Please fork this repository, create a new branch, and
       <a href="https://github.com/Harsh5442">
         <img src="https://avatars.githubusercontent.com/u/76982505?v=4" width="100px;" alt="Harsh" />
         <br />
-        <H1><b style="font-size: 24px;">Harsh</b></H1>
+        <H3><b style="font-size: 24px;">Harsh</b></H3>
       </a>
       <br />
       <a href="https://github.com/Harsh5442" title="Code">
@@ -125,7 +125,7 @@ Contributions are welcome! Please fork this repository, create a new branch, and
       <a href="https://github.com/pranav030203">
         <img src="https://avatars.githubusercontent.com/u/80613469?v=4" width="100px;" alt="Pranav" />
         <br />
-        <sub><b style="font-size: 24px;">Pranav</b></sub>
+        <H3><b style="font-size: 24px;">Pranav</b></H3>
       </a>
       <br />
       <a href="https://github.com/pranav030203" title="Code">
@@ -140,7 +140,7 @@ Contributions are welcome! Please fork this repository, create a new branch, and
       <a href="https://github.com/Ayush2948">
         <img src="https://avatars.githubusercontent.com/u/78246711?v=4" width="100px;" alt="Ayush" />
         <br />
-        <sub><b style="font-size: 24px;">Ayush</b></sub>
+        <H3><b style="font-size: 24px;">Ayush</b></H3>
       </a>
       <br />
       <a href="https://github.com/Ayush2948" title="Code">
