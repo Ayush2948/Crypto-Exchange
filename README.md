@@ -104,11 +104,13 @@ Contributions are welcome! Please fork this repository, create a new branch, and
 
 ## Contributors
 
+## Contributors
+
 <table>
   <tr>
     <td align="center">
       <a href="https://github.com/Harsh5442">
-        <img src="https://avatars.githubusercontent.com/u/76982505?v=4" width="100px;" alt="Harsh" />
+        <img src="https://i.postimg.cc/NfSn1KRn/Screenshot-2024-11-12-220207.png" width="100px;" alt="Harsh" />
         <br />
         <H3><b style="font-size: 24px;">Harsh</b></H3>
       </a>
@@ -153,6 +155,7 @@ Contributions are welcome! Please fork this repository, create a new branch, and
     </td>
   </tr>
 </table>
+
 
 ## License
 
