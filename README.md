@@ -1,5 +1,3 @@
-Here is the final updated code for the README with the new images for Harsh, Pranav, and Ayush:
-
 # Crypto Exchange Platform
 
 This project is a cryptocurrency exchange platform built with modern web technologies. Users can connect their crypto wallets, view live cryptocurrency prices, and send crypto assets across the blockchain. The platform includes a responsive frontend, a smart contract backend, and live crypto price updates.
@@ -158,5 +156,3 @@ Contributions are welcome! Please fork this repository, create a new branch, and
 
 This project is licensed under the MIT License.
 ```
-
-This version includes the updated images for **Harsh**, **Pranav**, and **Ayush**. Let me know if you need anything else!
