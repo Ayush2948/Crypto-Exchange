@@ -123,7 +123,7 @@ Contributions are welcome! Please fork this repository, create a new branch, and
     </td>
     <td align="center">
       <a href="https://github.com/pranav030203">
-        <img src="https://postimg.cc/tYGnhHm9" width="100px;" alt="Pranav" />
+        <img src="[about.jpg](https://postimg.cc/tYGnhHm9)" width="100px;" alt="Pranav" />
         <br />
         <H3><b style="font-size: 24px;">Pranav</b></H3>
       </a>
