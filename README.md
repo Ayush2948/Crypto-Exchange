@@ -109,7 +109,7 @@ Contributors
       <a href="https://github.com/Harsh5442">
         <img src="https://avatars.githubusercontent.com/u/76982505?v=4" width="100px;" alt="Harsh" />
         <br />
-        <sub><b style="font-size: 18px;">Harsh</b></sub>
+        <sub><b style="font-size: 24px;">Harsh</b></sub>
       </a>
       <br />
       <a href="https://github.com/Harsh5442" title="Code">
@@ -124,7 +124,7 @@ Contributors
       <a href="https://github.com/pranav030203">
         <img src="https://avatars.githubusercontent.com/u/80613469?v=4" width="100px;" alt="Pranav" />
         <br />
-        <sub><b style="font-size: 18px;">Pranav</b></sub>
+        <sub><b style="font-size: 24px;">Pranav</b></sub>
       </a>
       <br />
       <a href="https://github.com/pranav030203" title="Code">
@@ -139,7 +139,7 @@ Contributors
       <a href="https://github.com/Ayush2948">
         <img src="https://avatars.githubusercontent.com/u/78246711?v=4" width="100px;" alt="Ayush" />
         <br />
-        <sub><b style="font-size: 18px;">Ayush</b></sub>
+        <sub><b style="font-size: 24px;">Ayush</b></sub>
       </a>
       <br />
       <a href="https://github.com/Ayush2948" title="Code">
@@ -152,6 +152,7 @@ Contributors
     </td>
   </tr>
 </table>
+
 ## License
 
 This project is licensed under the MIT License.
