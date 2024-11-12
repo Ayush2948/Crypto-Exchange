@@ -113,7 +113,7 @@ Contributors
       </a>
       <br />
       <a href="https://github.com/Harsh5442" title="Code">💻</a>
-      <a href="https://www.linkedin.com/in/harsh5442/" title="LinkedIn"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="20" height="20" /></a>
+      <a href="https://www.linkedin.com/in/harsh5442/" title="LinkedIn"><img src="https://raw.githubusercontent.com/githubocto/flat-icons/master/svg/linkedin.svg" width="20" height="20" /></a>
     </td>
     <td align="center">
       <a href="https://github.com/pranav030203">
@@ -123,7 +123,7 @@ Contributors
       </a>
       <br />
       <a href="https://github.com/pranav030203" title="Code">💻</a>
-      <a href="https://www.linkedin.com/in/pranav-phadatare-07aa53239/" title="LinkedIn"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="20" height="20" /></a>
+      <a href="https://www.linkedin.com/in/pranav-phadatare-07aa53239/" title="LinkedIn"><img src="https://raw.githubusercontent.com/githubocto/flat-icons/master/svg/linkedin.svg" width="20" height="20" /></a>
     </td>
     <td align="center">
       <a href="https://github.com/Ayush2948">
@@ -133,11 +133,10 @@ Contributors
       </a>
       <br />
       <a href="https://github.com/Ayush2948" title="Code">💻</a>
-      <a href="https://www.linkedin.com/in/ayushp2948/" title="LinkedIn"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="20" height="20" /></a>
+      <a href="https://www.linkedin.com/in/ayushp2948/" title="LinkedIn"><img src="https://raw.githubusercontent.com/githubocto/flat-icons/master/svg/linkedin.svg" width="20" height="20" /></a>
     </td>
   </tr>
 </table>
-
 ## License
 
 This project is licensed under the MIT License.
