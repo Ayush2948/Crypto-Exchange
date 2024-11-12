@@ -123,7 +123,7 @@ Contributions are welcome! Please fork this repository, create a new branch, and
     </td>
     <td align="center">
       <a href="https://github.com/pranav030203">
-        <img src="[about.jpg](https://postimg.cc/tYGnhHm9)" width="100px;" alt="Pranav" />
+        <img src="https://i.postimg.cc/jdL6YxHn/about.jpg" width="100px;" alt="Pranav" />
         <br />
         <H3><b style="font-size: 24px;">Pranav</b></H3>
       </a>
@@ -138,7 +138,7 @@ Contributions are welcome! Please fork this repository, create a new branch, and
     </td>
     <td align="center">
       <a href="https://github.com/Ayush2948">
-        <img src="https://avatars.githubusercontent.com/u/78246711?v=4" width="100px;" alt="Ayush" />
+        <img src="https://i.postimg.cc/C5rBXTwv/Screenshot-2024-11-12-215639.png" width="100px;" alt="Ayush" />
         <br />
         <H3><b style="font-size: 24px;">Ayush</b></H3>
       </a>
