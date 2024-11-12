@@ -103,38 +103,52 @@ npm start
 Contributions are welcome! Please fork this repository, create a new branch, and submit a pull request.
 
 Contributors
-Contributors
 <table>
   <tr>
     <td align="center">
       <a href="https://github.com/Harsh5442">
-        <img src="https://avatars.githubusercontent.com/u/76982505?v=4" width="100px;" alt="Harsh"/>
+        <img src="https://avatars.githubusercontent.com/u/76982505?v=4" width="100px;" alt="Harsh" />
         <br />
         <sub><b>Harsh</b></sub>
       </a>
       <br />
-      <a href="https://github.com/Harsh5442" title="Code"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="20" height="20" /></a>
-      <a href="https://www.linkedin.com/in/harsh5442/" title="LinkedIn"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="20" height="20" /></a>
+      <a href="https://github.com/Harsh5442" title="Code">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="20" height="20" />
+      </a>
+      &nbsp;
+      <a href="https://www.linkedin.com/in/harsh5442/" title="LinkedIn">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="20" height="20" />
+      </a>
     </td>
     <td align="center">
       <a href="https://github.com/pranav030203">
-        <img src="https://avatars.githubusercontent.com/u/80613469?v=4" width="100px;" alt="Pranav"/>
+        <img src="https://avatars.githubusercontent.com/u/80613469?v=4" width="100px;" alt="Pranav" />
         <br />
         <sub><b>Pranav</b></sub>
       </a>
       <br />
-      <a href="https://github.com/pranav030203" title="Code"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="20" height="20" /></a>
-      <a href="https://www.linkedin.com/in/pranav-phadatare-07aa53239/" title="LinkedIn"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="20" height="20" /></a>
+      <a href="https://github.com/pranav030203" title="Code">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="20" height="20" />
+      </a>
+      &nbsp;
+      <a href="https://www.linkedin.com/in/pranav-phadatare-07aa53239/" title="LinkedIn">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="20" height="20" />
+      </a>
     </td>
     <td align="center">
       <a href="https://github.com/Ayush2948">
-        <img src="https://avatars.githubusercontent.com/u/78246711?v=4" width="100px;" alt="Ayush"/>
+        <img src="https://avatars.githubusercontent.com/u/78246711?v=4" width="100px;" alt="Ayush" />
         <br />
         <sub><b>Ayush</b></sub>
       </a>
       <br />
-      <a href="https://github.com/Ayush2948" title="Code"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="20" height="20" /></a>
-      <a href="https://www.linkedin.com/in/ayushp2948/" title="LinkedIn"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="20" height="20" /></a>
+      <a href="https://github.com/Ayush2948" title="Code">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="20" height="20" />
+      </a>
+      &nbsp;
+      <a href="https://www.linkedin.com/in/ayushp2948/" title="LinkedIn">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="20" height="20" />
+      </a>
     </td>
   </tr>
 </table>
