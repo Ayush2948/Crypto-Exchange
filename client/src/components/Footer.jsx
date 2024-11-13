@@ -30,7 +30,10 @@ const Footer = () => {
 
     return (
         <div className="w-full flex md:justify-center justify-between items-center flex-col p-4 gradient-bg-footer pt-[50px]">
-            <div className="flex flex-[0.5] justify-center items-center">
+                      <div className="sm:w-[90%] w-full h-[0.25px] bg-gray-400 mt-5pt-[50px]" />
+
+
+            <div className="flex flex-[0.5] justify-center items-center pt-[50px] ">
                 <img src={logo} alt="logo" className="w-48" />
             </div>
 
