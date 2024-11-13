@@ -27,9 +27,7 @@ const Navbar = ({ scrollToServices, scrollToTransactions, scrollToMarket, scroll
                 <NavbarItem title="Services" onClick={scrollToServices} />
                 <NavbarItem title="Transactions" onClick={scrollToTransactions} />
                 <NavbarItem title="Tutorial" onClick={scrollToTutorial} />
-                <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full hover:bg-[#2546bd] cursor-pointer">
-                    Login
-                </li>
+                
             </ul>
 
             <div className="flex relative">
