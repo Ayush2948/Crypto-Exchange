@@ -30,8 +30,8 @@ Follow these steps to run the project locally:
 ### Step 1: Clone the repository
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Ayush2948/Crypto-Exchange.git
+cd Crypto-Exchange
 ```
 
 ### Step 2: Install Client Dependencies
