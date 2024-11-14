@@ -23,7 +23,7 @@ const TeamMemberCard = ({ name, regNo, color = "bg-[#2952e3]" }) => {
 
 const Footer = () => {
     const teamMembers = [
-        { name: "Harsh Patel", regNo: "21BKT015", color: "bg-[#2952e3]" },
+        { name: "Harsh Patel", regNo: "21BKT0152", color: "bg-[#2952e3]" },
         { name: "Ayush Patil", regNo: "21BCT0330", color: "bg-[#8945F8]" },
         { name: "Pranav Phadatare", regNo: "21BCE2694", color: "bg-[#F84550]" },
     ];
