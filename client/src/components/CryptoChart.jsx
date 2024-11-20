@@ -82,7 +82,7 @@ const CryptoChart = () => {
   return (
     <div style={{
       color: 'white',
-      padding: '100px 0',
+      padding: '80px 0',
       borderRadius: '10px',
       boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
       width: '80%',
