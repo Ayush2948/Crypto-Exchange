@@ -6,7 +6,7 @@ const ServiceCard = ({ color, title, icons, subtitle, live }) => (
   <div
     className="flex flex-col justify-center items-center white-glassmorphism p-4 m-2 cursor-pointer hover:shadow-xl"
     style={{
-      backdropFilter: 'blur(15px)',
+      backdropFilter: 'blur(15.5px)',
       borderRadius: '10px',
       boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
       width: '150px', // Set width to create a square
