@@ -48,23 +48,7 @@ const Footer = () => {
                 </p>
             </div>
 
-            {/* Team Members Section */}
-            <div className="flex flex-col items-center w-full">
-                <h1 className="text-white text-lg font-semibold mb-3">
-                    Our Team
-                </h1>
-                <p className="text-gray-400 text-sm mb-4">(Click on cards to reveal registration numbers)</p>
-                <div className="flex flex-row justify-center flex-wrap w-full max-w-[1000px] mt-4">
-                    {teamMembers.map((member, index) => (
-                        <TeamMemberCard
-                            key={index}
-                            name={member.name}
-                            regNo={member.regNo}
-                            color={member.color}
-                        />
-                    ))}
-                </div>
-            </div>
+           
 
             <div className="flex justify-center items-center flex-col mt-8">
                 <p className="text-white text-sm text-center">Come join us and hear for the unexpected miracle</p>
