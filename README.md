@@ -151,7 +151,7 @@ Contributions are welcome! Please fork this repository, create a new branch, and
     </td>
     <td align="center">
       <a href="https://github.com/Gauravc07">
-        <img src="https://postimg.cc/HVTR3Yy0" width="100px;" alt="Gaurav" />
+        <img src="https://i.postimg.cc/sDWzj1fL/1728324412254.jpg" width="100px;" alt="Gaurav" />
         <br />
         <H3><b style="font-size: 24px;">Gaurav</b></H3>
       </a>
