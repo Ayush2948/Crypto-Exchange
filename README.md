@@ -105,21 +105,6 @@ Contributions are welcome! Please fork this repository, create a new branch, and
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/Ayush2948">
-        <img src="https://i.postimg.cc/C5rBXTwv/Screenshot-2024-11-12-215639.png" width="100px;" alt="Ayush" />
-        <br />
-        <H3><b style="font-size: 24px;">Ayush</b></H3>
-      </a>
-      <br />
-      <a href="https://github.com/Ayush2948" title="Code">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="20" height="20" />
-      </a>
-      &nbsp;
-      <a href="https://www.linkedin.com/in/ayushp2948/" title="LinkedIn">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="20" height="20" />
-      </a>
-    </td>
-    <td align="center">
       <a href="https://github.com/Harsh5442">
         <img src="https://i.postimg.cc/NfSn1KRn/Screenshot-2024-11-12-220207.png" width="100px;" alt="Harsh" />
         <br />
@@ -149,10 +134,24 @@ Contributions are welcome! Please fork this repository, create a new branch, and
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="20" height="20" />
       </a>
     </td>
-    
+    <td align="center">
+      <a href="https://github.com/Ayush2948">
+        <img src="https://i.postimg.cc/C5rBXTwv/Screenshot-2024-11-12-215639.png" width="100px;" alt="Ayush" />
+        <br />
+        <H3><b style="font-size: 24px;">Ayush</b></H3>
+      </a>
+      <br />
+      <a href="https://github.com/Ayush2948" title="Code">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="20" height="20" />
+      </a>
+      &nbsp;
+      <a href="https://www.linkedin.com/in/ayushp2948/" title="LinkedIn">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="20" height="20" />
+      </a>
+    </td>
     <td align="center">
       <a href="https://github.com/Gauravc07">
-        <img src="https://i.postimg.cc/sDWzj1fL/1728324412254.jpg" width="100px;" alt="Gaurav" />
+        <img src="https://postimg.cc/HVTR3Yy0" width="100px;" alt="Gaurav" />
         <br />
         <H3><b style="font-size: 24px;">Gaurav</b></H3>
       </a>
@@ -165,7 +164,6 @@ Contributions are welcome! Please fork this repository, create a new branch, and
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="20" height="20" />
       </a>
     </td>
-
   </tr>
 </table>
 
