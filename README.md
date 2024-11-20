@@ -149,6 +149,22 @@ Contributions are welcome! Please fork this repository, create a new branch, and
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="20" height="20" />
       </a>
     </td>
+    <td align="center">
+      <a href="https://github.com/Gauravc07">
+        <img src="https://postimg.cc/HVTR3Yy0" width="100px;" alt="Gaurav" />
+        <br />
+        <H3><b style="font-size: 24px;">Gaurav</b></H3>
+      </a>
+      <br />
+      <a href="https://github.com/Gauravc07" title="Code">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="20" height="20" />
+      </a>
+      &nbsp;
+      <a href="#" title="LinkedIn">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="20" height="20" />
+      </a>
+    </td>
+
   </tr>
 </table>
 
