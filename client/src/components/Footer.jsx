@@ -23,7 +23,9 @@ const TeamMemberCard = ({ name, regNo, color = "bg-[#2952e3]" }) => {
 
 const Footer = () => {
     const teamMembers = [
-
+        { name: "Harsh Patel", regNo: "21BKT015", color: "bg-[#2952e3]" },
+        { name: "Ayush Patil", regNo: "21BCT0330", color: "bg-[#8945F8]" },
+        { name: "Pranav Phadatare", regNo: "21BCE2694", color: "bg-[#F84550]" },
     ];
 
     return (
@@ -48,7 +50,23 @@ const Footer = () => {
                 </p>
             </div>
 
-           
+            {/* Team Members Section */}
+            <div className="flex flex-col items-center w-full">
+                <h1 className="text-white text-lg font-semibold mb-3">
+                    Our Team
+                </h1>
+                <p className="text-gray-400 text-sm mb-4">(Click on cards to reveal registration numbers)</p>
+                <div className="flex flex-row justify-center flex-wrap w-full max-w-[1000px] mt-4">
+                    {teamMembers.map((member, index) => (
+                        <TeamMemberCard
+                            key={index}
+                            name={member.name}
+                            regNo={member.regNo}
+                            color={member.color}
+                        />
+                    ))}
+                </div>
+            </div>
 
             <div className="flex justify-center items-center flex-col mt-8">
                 <p className="text-white text-sm text-center">Come join us and hear for the unexpected miracle</p>
