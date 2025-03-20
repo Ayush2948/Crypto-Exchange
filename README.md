@@ -148,7 +148,36 @@ Contributions are welcome! Please fork this repository, create a new branch, and
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="20" height="20" />
       </a>
     </td>
-   
+    <td align="center">
+      <a href="https://github.com/Gauravc07">
+        <img src="https://i.postimg.cc/sDWzj1fL/1728324412254.jpg" width="100px;" alt="Gaurav" />
+        <br />
+        <H3><b style="font-size: 24px;">Gaurav</b></H3>
+      </a>
+      <br />
+      <a href="https://github.com/Gauravc07" title="Code">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="20" height="20" />
+      </a>
+      &nbsp;
+      <a href="#" title="LinkedIn">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="20" height="20" />
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/DhruvKedia2603">
+        <img src="https://i.postimg.cc/R0NYd84M/Screenshot-2025-03-21-032251.png" width="100px;" alt="Dhruv" />
+      <br />
+      <H3><b style="font-size: 24px;">Dhruv</b></H3>
+      </a>
+      <br />
+      <a href="https://github.com/DhruvKedia2603" title="Code">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="20" height="20" /></a>
+      &nbsp;
+      <a href="https://www.linkedin.com/in/dhruv-kedia-914275283/" title="LinkedIn">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="20" height="20" />
+  </a>
+</td>
+
   </tr>
 </table>
 
