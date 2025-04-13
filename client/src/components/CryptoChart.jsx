@@ -1,11 +1,25 @@
 import React, { useState, useEffect } from 'react';
 
-// Simple custom live indicator component instead of using external libraries
+// Simple custom live indicator component
 const LiveIndicator = () => (
   <div className="w-2 h-2 bg-green-500 rounded-full ml-2"></div>
 );
- 
-const ServiceCard = ({ title, subtitle, live }) => (
+
+// Define crypto logo mapping
+const cryptoLogos = {
+  bitcoin: "https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=035",
+  ethereum: "https://cryptologos.cc/logos/ethereum-eth-logo.svg?v=035",
+  litecoin: "https://cryptologos.cc/logos/litecoin-ltc-logo.svg?v=035",
+  solana: "https://cryptologos.cc/logos/solana-sol-logo.svg?v=035",
+  dogecoin: "https://cryptologos.cc/logos/dogecoin-doge-logo.svg?v=035",
+  cardano: "https://cryptologos.cc/logos/cardano-ada-logo.png?v=035",
+  polkadot: "https://cryptologos.cc/logos/polkadot-dot-logo.png?v=035",
+  ripple: "https://cryptologos.cc/logos/xrp-xrp-logo.svg?v=035",
+  "usd-coin": "https://cryptologos.cc/logos/usd-coin-usdc-logo.svg?v=035",
+  chainlink: "https://cryptologos.cc/logos/chainlink-link-logo.png?v=035"
+};
+
+const ServiceCard = ({ cryptoId, title, subtitle, live }) => (
   <div
     className="flex flex-col justify-center items-center bg-slate-800 bg-opacity-30 p-4 m-2 cursor-pointer hover:shadow-xl rounded-lg"
     style={{
@@ -16,8 +30,15 @@ const ServiceCard = ({ title, subtitle, live }) => (
     }}
   >
     <div className="w-10 h-10 rounded-full flex justify-center items-center bg-slate-700">
-      {/* Using crypto symbol as fallback */}
-      <span className="text-lg font-bold text-white">{title.substring(0, 3).toUpperCase()}</span>
+      {cryptoLogos[cryptoId] ? (
+        <img 
+          src={cryptoLogos[cryptoId]} 
+          alt={title} 
+          style={{ width: '40px', height: '40px' }} 
+        />
+      ) : (
+        <span className="text-lg font-bold text-white">{title.substring(0, 3).toUpperCase()}</span>
+      )}
     </div>
     <div className="mt-3">
       <h1 className="text-white text-lg">{title}</h1>
@@ -84,10 +105,20 @@ const CryptoChart = () => {
   }, []);
 
   return (
-    <div className="text-white p-8 rounded-lg shadow-lg w-4/5 mx-auto text-center">
-      <h1 className="text-3xl sm:text-5xl py-2 bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent font-bold">
+    <div style={{
+      color: 'white',
+      padding: '65px 0',
+      borderRadius: '10px',
+      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+      width: '80%',
+      margin: 'auto',
+      textAlign: 'center'
+    }}>
+      <h1 className="text-white text-3xl sm:text-5xl py-2 text-gradient">
         Live Cryptocurrency Prices
       </h1>
+      
+      <h1 className='text-transparent'> gg</h1>
       
       {error && (
         <div className="mt-4 mb-6 text-red-400 text-sm">
@@ -95,10 +126,11 @@ const CryptoChart = () => {
         </div>
       )}
       
-      <div className="flex flex-wrap justify-center items-center gap-6 mt-8">
+      <div className="flex flex-wrap justify-center items-center gap-6">
         {cryptoList.map(crypto => (
           <ServiceCard
             key={crypto}
+            cryptoId={crypto}
             title={cryptoPrices[crypto]?.name || crypto}
             subtitle={cryptoPrices[crypto] ? `$${cryptoPrices[crypto].price}` : 'Loading...'}
             live={!isFetching && cryptoPrices[crypto]}
@@ -109,16 +141,22 @@ const CryptoChart = () => {
       <button
         onClick={fetchCryptoPrices}
         disabled={isFetching}
-        className={`mt-8 px-6 py-3 rounded-md text-white transition-colors ${
-          isFetching ? 'bg-blue-700 cursor-not-allowed' : 'bg-blue-600 hover:bg-blue-700'
-        }`}
+        style={{
+          backgroundColor: '#007bff',
+          color: 'white',
+          padding: '10px 20px',
+          borderRadius: '5px',
+          fontSize: '1rem',
+          marginTop: '30px',
+          border: 'none',
+          cursor: 'pointer',
+          transition: 'background-color 0.3s ease'
+        }}
+        onMouseOver={(e) => e.target.style.backgroundColor = '#0056b3'}
+        onMouseOut={(e) => e.target.style.backgroundColor = '#007bff'}
       >
         {isFetching ? 'Updating...' : 'Update Prices'}
       </button>
-      
-      {isFetching && (
-        <p className="mt-2 text-blue-300 text-sm">Fetching latest prices...</p>
-      )}
     </div>
   );
 };
