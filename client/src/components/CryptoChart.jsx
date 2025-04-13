@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Circle } from 'lucide-react'; // Using Lucide for the live indicator
+
+// Simple custom live indicator component instead of using external libraries
+const LiveIndicator = () => (
+  <div className="w-2 h-2 bg-green-500 rounded-full ml-2"></div>
+);
 
 const ServiceCard = ({ title, subtitle, live }) => (
   <div
@@ -19,7 +23,7 @@ const ServiceCard = ({ title, subtitle, live }) => (
       <h1 className="text-white text-lg">{title}</h1>
       <div className="flex justify-center items-center">
         <p className="text-white text-sm">{subtitle}</p>
-        {live && <Circle className="text-green-500 ml-2 fill-green-500" size={8} />}
+        {live && <LiveIndicator />}
       </div>
     </div>
   </div>
@@ -37,13 +41,12 @@ const CryptoChart = () => {
     'usd-coin', 'chainlink'
   ];
 
-  // Function to fetch crypto prices using CoinGecko API which doesn't require an API key
+  // Function to fetch crypto prices using CoinGecko API
   const fetchCryptoPrices = async () => {
     setIsFetching(true);
     setError(null);
     
     try {
-      // Using CoinGecko API instead of CoinCap
       const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,litecoin,solana,dogecoin,cardano,polkadot,ripple,usd-coin,chainlink&vs_currencies=usd');
       
       if (!response.ok) {
