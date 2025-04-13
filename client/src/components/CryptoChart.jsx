@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 const LiveIndicator = () => (
   <div className="w-2 h-2 bg-green-500 rounded-full ml-2"></div>
 );
-
+ 
 const ServiceCard = ({ title, subtitle, live }) => (
   <div
     className="flex flex-col justify-center items-center bg-slate-800 bg-opacity-30 p-4 m-2 cursor-pointer hover:shadow-xl rounded-lg"
