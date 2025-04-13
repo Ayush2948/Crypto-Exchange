@@ -1,201 +1,121 @@
-import React, { useState, useEffect } from 'react'; // Ensure useState and useEffect are imported
-import axios from 'axios';
-import { BsCircleFill } from 'react-icons/bs'; // Import live icon
+import React, { useState, useEffect } from 'react';
+import { Circle } from 'lucide-react'; // Using Lucide for the live indicator
 
-const ServiceCard = ({ color, title, icons, subtitle, live }) => (
+const ServiceCard = ({ title, subtitle, live }) => (
   <div
-    className="flex flex-col justify-center items-center white-glassmorphism p-4 m-2 cursor-pointer hover:shadow-xl"
+    className="flex flex-col justify-center items-center bg-slate-800 bg-opacity-30 p-4 m-2 cursor-pointer hover:shadow-xl rounded-lg"
     style={{
-      backdropFilter: 'blur(15.5px)',
-      borderRadius: '10px',
-      boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
-      width: '150px', // Set width to create a square
-      height: '150px', // Set height to create a square
+      backdropFilter: 'blur(15px)',
+      width: '150px',
+      height: '150px',
       textAlign: 'center',
-      background: 'linear-gradient(to right, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(to left, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%)'
     }}
   >
-    <div className={`w-10 h-10 rounded-full flex justify-center items-center ${color}`}>
-      {icons}
+    <div className="w-10 h-10 rounded-full flex justify-center items-center bg-slate-700">
+      {/* Using crypto symbol as fallback */}
+      <span className="text-lg font-bold text-white">{title.substring(0, 3).toUpperCase()}</span>
     </div>
     <div className="mt-3">
       <h1 className="text-white text-lg">{title}</h1>
       <div className="flex justify-center items-center">
         <p className="text-white text-sm">{subtitle}</p>
-        {live && <BsCircleFill className="text-green-500 ml-2" size={12} />} {/* Live icon */}
+        {live && <Circle className="text-green-500 ml-2 fill-green-500" size={8} />}
       </div>
     </div>
   </div>
 );
 
 const CryptoChart = () => {
-  const [cryptoPrices, setCryptoPrices] = useState({
-    bitcoin: null,
-    ethereum: null,
-    litecoin: null,
-    solana: null,
-    dogecoin: null,
-    cardano: null,
-    polkadot: null,
-    xrp: null,
-    usdc: null,
-    chainlink: null
-  });
+  const [cryptoPrices, setCryptoPrices] = useState({});
   const [isFetching, setIsFetching] = useState(false);
+  const [error, setError] = useState(null);
 
-  // Function to fetch live prices
+  // List of cryptocurrencies to display
+  const cryptoList = [
+    'bitcoin', 'ethereum', 'litecoin', 'solana', 
+    'dogecoin', 'cardano', 'polkadot', 'ripple', 
+    'usd-coin', 'chainlink'
+  ];
+
+  // Function to fetch crypto prices using CoinGecko API which doesn't require an API key
   const fetchCryptoPrices = async () => {
     setIsFetching(true);
+    setError(null);
+    
     try {
-      const response = await axios.get('https://api.coincap.io/v2/assets');
-      const topCryptos = ['bitcoin', 'ethereum', 'litecoin', 'solana', 'dogecoin', 'cardano', 'polkadot', 'xrp', 'usdc', 'chainlink'];
-
+      // Using CoinGecko API instead of CoinCap
+      const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,litecoin,solana,dogecoin,cardano,polkadot,ripple,usd-coin,chainlink&vs_currencies=usd');
+      
+      if (!response.ok) {
+        throw new Error(`API error: ${response.status}`);
+      }
+      
+      const data = await response.json();
+      
+      // Transform data into the format we need
       const prices = {};
-      topCryptos.forEach((crypto) => {
-        const cryptoData = response.data.data.find((item) => item.id === crypto);
-        if (cryptoData) {
-          prices[crypto] = {
-            name: cryptoData.name,
-            price: parseFloat(cryptoData.priceUsd).toFixed(2),
-          };
-        }
+      Object.keys(data).forEach(crypto => {
+        prices[crypto] = {
+          name: crypto.charAt(0).toUpperCase() + crypto.slice(1),
+          price: data[crypto].usd.toFixed(2)
+        };
       });
-
+      
       setCryptoPrices(prices);
     } catch (error) {
       console.error("Error fetching crypto prices:", error);
+      setError("Could not fetch live data. Please try again later.");
+    } finally {
+      setIsFetching(false);
     }
-    setIsFetching(false);
   };
 
-  // Fetch prices initially and set interval for updates every 1 minute
   useEffect(() => {
-    fetchCryptoPrices(); // Fetch prices on initial load
-
+    fetchCryptoPrices();
+    
     const intervalId = setInterval(() => {
-      fetchCryptoPrices(); // Fetch prices every 1 minute
-    }, 60000);
-
-    return () => clearInterval(intervalId); // Cleanup on unmount
+      fetchCryptoPrices();
+    }, 60000); // Update every minute
+    
+    return () => clearInterval(intervalId);
   }, []);
 
   return (
-    <div style={{
-      color: 'white',
-      padding: '65px 0',
-      borderRadius: '10px',
-      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
-      width: '80%',
-      margin: 'auto',
-      textAlign: 'center'
-    }}>
-      <h1 className="text-white text-3xl sm:text-5xl py-2 text-gradient">
+    <div className="text-white p-8 rounded-lg shadow-lg w-4/5 mx-auto text-center">
+      <h1 className="text-3xl sm:text-5xl py-2 bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent font-bold">
         Live Cryptocurrency Prices
-        <br />
       </h1>
-      <h1 className='text-transparent'> gg</h1>
-      <div className="flex flex-wrap justify-center items-center gap-6">
-        {/* Bitcoin Price */}
-        <ServiceCard
-          title="Bitcoin"
-          icons={<img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=035" alt="Bitcoin" style={{ width: '40px', height: '40px' }} />}
-          subtitle={`$${cryptoPrices.bitcoin ? cryptoPrices.bitcoin.price : 'Loading...'}`}
-          live={true} // Show live icon
-        />
-
-        {/* Ethereum Price */}
-        <ServiceCard
-          title="Ethereum"
-          icons={<img src="https://cryptologos.cc/logos/ethereum-eth-logo.svg?v=035" alt="Ethereum" style={{ width: '40px', height: '40px' }} />}
-          subtitle={`$${cryptoPrices.ethereum ? cryptoPrices.ethereum.price : 'Loading...'}`}
-          live={true} // Show live icon
-        />
-
-        {/* Litecoin Price */}
-        <ServiceCard
-          title="Litecoin"
-          icons={<img src="https://cryptologos.cc/logos/litecoin-ltc-logo.svg?v=035" alt="Litecoin" style={{ width: '40px', height: '40px' }} />}
-          subtitle={`$${cryptoPrices.litecoin ? cryptoPrices.litecoin.price : 'Loading...'}`}
-          live={true} // Show live icon
-        />
-
-        {/* Solana Price */}
-        <ServiceCard
-          title="Solana"
-          icons={<img src="https://cryptologos.cc/logos/solana-sol-logo.svg?v=035" alt="Solana" style={{ width: '40px', height: '40px' }} />}
-          subtitle={`$${cryptoPrices.solana ? cryptoPrices.solana.price : 'Loading...'}`}
-          live={true} // Show live icon
-        />
-
-        {/* Dogecoin Price */}
-        <ServiceCard
-          title="Dogecoin"
-          icons={<img src="https://cryptologos.cc/logos/dogecoin-doge-logo.svg?v=035" alt="Dogecoin" style={{ width: '40px', height: '40px' }} />}
-          subtitle={`$${cryptoPrices.dogecoin ? cryptoPrices.dogecoin.price : 'Loading...'}`}
-          live={true} // Show live icon
-        />
-
-        {/* Cardano Price */}
-        <ServiceCard
-          title="Cardano"
-          icons={<img src="https://cryptologos.cc/logos/cardano-ada-logo.png?v=035" alt="Cardano" style={{ width: '40px', height: '40px' }} />}
-          subtitle={`$${cryptoPrices.cardano ? cryptoPrices.cardano.price : 'Loading...'}`}
-          live={true} // Show live icon
-        />
-
-        {/* Polkadot Price */}
-        <ServiceCard
-          title="Polkadot"
-          icons={<img src="https://cryptologos.cc/logos/polkadot-dot-logo.png?v=035" alt="Polkadot" style={{ width: '40px', height: '40px' }} />}
-          subtitle={`$${cryptoPrices.polkadot ? cryptoPrices.polkadot.price : 'Loading...'}`}
-          live={true} // Show live icon
-        />
-
-        {/* XRP Price */}
-        <ServiceCard
-          title="XRP"
-          icons={<img src="https://cryptologos.cc/logos/xrp-xrp-logo.svg?v=035" alt="XRP" style={{ width: '40px', height: '40px' }} />}
-          subtitle={`$${cryptoPrices.xrp ? cryptoPrices.xrp.price : 'Loading...'}`}
-          live={true} // Show live icon
-        />
-
-        {/* USDC Price */}
-        <ServiceCard
-          title="USDC"
-          icons={<img src="https://cryptologos.cc/logos/usd-coin-usdc-logo.svg?v=035" alt="USDC" style={{ width: '40px', height: '40px' }} />}
-          subtitle={`$${cryptoPrices.usdc ? cryptoPrices.usdc.price : 'Loading...'}`}
-          live={true} // Show live icon
-        />
-
-        {/* Chainlink Price */}
-        <ServiceCard
-          title="Chainlink"
-          icons={<img src="https://cryptologos.cc/logos/chainlink-link-logo.png?v=035" alt="Chainlink" style={{ width: '40px', height: '40px' }} />}
-          subtitle={`$${cryptoPrices.chainlink ? cryptoPrices.chainlink.price : 'Loading...'}`}
-          live={true} // Show live icon
-        />
+      
+      {error && (
+        <div className="mt-4 mb-6 text-red-400 text-sm">
+          {error}
+        </div>
+      )}
+      
+      <div className="flex flex-wrap justify-center items-center gap-6 mt-8">
+        {cryptoList.map(crypto => (
+          <ServiceCard
+            key={crypto}
+            title={cryptoPrices[crypto]?.name || crypto}
+            subtitle={cryptoPrices[crypto] ? `$${cryptoPrices[crypto].price}` : 'Loading...'}
+            live={!isFetching && cryptoPrices[crypto]}
+          />
+        ))}
       </div>
 
-      {/* Button to manually trigger update */}
       <button
         onClick={fetchCryptoPrices}
         disabled={isFetching}
-        style={{
-          backgroundColor: '#007bff',
-          color: 'white',
-          padding: '10px 20px',
-          borderRadius: '5px',
-          fontSize: '1rem',
-          marginTop: '30px',
-          border: 'none',
-          cursor: 'pointer',
-          transition: 'background-color 0.3s ease'
-        }}
-        onMouseOver={(e) => e.target.style.backgroundColor = '#0056b3'}
-        onMouseOut={(e) => e.target.style.backgroundColor = '#007bff'}
+        className={`mt-8 px-6 py-3 rounded-md text-white transition-colors ${
+          isFetching ? 'bg-blue-700 cursor-not-allowed' : 'bg-blue-600 hover:bg-blue-700'
+        }`}
       >
         {isFetching ? 'Updating...' : 'Update Prices'}
       </button>
+      
+      {isFetching && (
+        <p className="mt-2 text-blue-300 text-sm">Fetching latest prices...</p>
+      )}
     </div>
   );
 };
