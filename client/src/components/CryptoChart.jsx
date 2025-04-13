@@ -7,16 +7,16 @@ const LiveIndicator = () => (
 
 // Define crypto logo mapping
 const cryptoLogos = {
-  bitcoin: "https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=035",
-  ethereum: "https://cryptologos.cc/logos/ethereum-eth-logo.svg?v=035",
-  litecoin: "https://cryptologos.cc/logos/litecoin-ltc-logo.svg?v=035",
-  solana: "https://cryptologos.cc/logos/solana-sol-logo.svg?v=035",
-  dogecoin: "https://cryptologos.cc/logos/dogecoin-doge-logo.svg?v=035",
-  cardano: "https://cryptologos.cc/logos/cardano-ada-logo.png?v=035",
-  polkadot: "https://cryptologos.cc/logos/polkadot-dot-logo.png?v=035",
-  ripple: "https://cryptologos.cc/logos/xrp-xrp-logo.svg?v=035",
-  "usd-coin": "https://cryptologos.cc/logos/usd-coin-usdc-logo.svg?v=035",
-  chainlink: "https://cryptologos.cc/logos/chainlink-link-logo.png?v=035"
+ bitcoin: "/images/bitcoin.png",
+  ethereum: "/images/ethereum.svg",
+  litecoin: "/images/litecoin.svg",
+  solana: "/images/solana.svg",
+  dogecoin: "/images/dogecoin.svg",
+  cardano: "/images/cardano.png",
+  polkadot: "/images/polkadot.png",
+  ripple: "/images/xrp.svg",     // Note: API uses 'ripple' but logo file uses 'xrp'
+  "usd-coin": "/images/usd.svg",
+  chainlink: "/images/chainlink.png"
 };
 
 const ServiceCard = ({ cryptoId, title, subtitle, live }) => (
